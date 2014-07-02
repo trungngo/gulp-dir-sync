@@ -1,7 +1,6 @@
 
 chokidar = require 'chokidar'
 
-_     = require 'lodash'
 fs    = require 'fs-extra'
 path  = require 'path'
 gutil = require 'gulp-util'
