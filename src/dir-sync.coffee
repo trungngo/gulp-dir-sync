@@ -45,21 +45,21 @@ module.exports = (fromDir, toDir, opts = {})->
 
     if event is 'addDir'
       unless fs.existsSync destFile
-        gutil.log 'mkdir:', destFile
+        gutil.log gutil.colors.green "mkdir: #{destFile}"
         fs.mkdirSync destFile
     if event is 'add'
       unless fs.existsSync destFile
-        gutil.log 'add:', srcFile, '>', destFile
+        gutil.log gutil.colors.green "add: #{srcFile} > #{destFile}"
         fs.copySync srcFile, destFile
     if event is 'change'
       if compareMtime srcFile, destFile
-        gutil.log 'change:', srcFile, '>', destFile
+        gutil.log gutil.colors.green "change: #{srcFile} > #{destFile}"
         fs.copySync srcFile, destFile
     if event is 'unlink'
       if fs.existsSync destFile
-        gutil.log 'delete:', destFile
+        gutil.log gutil.colors.green "delete: #{destFile}"
         fs.removeSync destFile
     if event is 'unlinkDir'
       if fs.existsSync destFile
-        gutil.log 'rmdir:', destFile
+        gutil.log gutil.colors.green "rmdir: #{destFile}"
         fs.removeSync destFile, 'force': true

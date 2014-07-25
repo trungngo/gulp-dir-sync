@@ -1,8 +1,8 @@
 {
   "name": "gulp-dir-sync",
-  "version": "0.1.1",
-  "description": "Gulp task for synchronizing two directories.",
-  "main": "lib/index.js",
+  "version": "0.1.2",
+  "description": "Synchronizing directories plugin for Gulp.",
+  "main": "lib/dir-sync",
   "devDependencies": {
     "gulp": "^3.8.5",
     "gulp-clean": "^0.3.1",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/nariyu/gulp-dir-sync",
   "keywords": [
+    "gulp",
+    "gulpplugin",
     "sync"
   ],
   "author": {

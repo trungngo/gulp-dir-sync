@@ -1,6 +1,6 @@
 # gulp-dir-sync
 
-Gulp task for synchronizing 2 directories.
+Synchronizing directories plugin for Gulp.
 
 ## USAGE
 
