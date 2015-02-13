@@ -13,9 +13,9 @@ $ npm install gulp-dir-sync --save-dev
 ### Parameters
 
 dirSync accepts 3 parameters:  
-*source - the directory you want to clone
-*destination - the directory you want to clone to
-*options - an object that is used to pass the filter option - processing will only occur on files that match the filter
+*  source - the directory you want to clone
+*  destination - the directory you want to clone to
+*  options - an object that is used to pass the filter option - processing will only occur on files that match the filter
 
 ### Basic Example
 
